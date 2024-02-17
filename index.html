@@ -72,15 +72,16 @@
                 <h2>Select a Professional</h2>
                 <form id="appointment-form" action="#" method="post">
                     <select id="options" name="options">
-                        <option value="option1" onselect="choose('Option A')">Option A</option>
-                        <option value="option2" onselect="choose('Option B')">Option B</option>
-                        <option value="option3" onselect="choose('Option C')">Option C</option>
-                        <option value="option1" onselect="choose('Option D')">Option D</option>
-                        <option value="option2" onselect="choose('Option E')">Option E</option>
+                        <option value="option1" onselect="choose('Mark')">Mark</option>
+                        <option value="option2" onselect="choose('Jones')">Jones</option>
+                        <option value="option3" onselect="choose('Ben')">Ben/option>
+                        <option value="option1" onselect="choose('Bob')">Bob</option>
+                        <option value="option2" onselect="choose('Joesph')">Joesph</option>
                     </select><br><br>
                 </form>
-                <img id="proffesion-pic" style="align-self: center;"></img><br><br>
-                <button id="choose">Choose</button>
+                <img id="pic" style="align-self: center;"></img><br><br>
+                <textarea id="description" style="width: 100%;height: auto;"></textarea><br><br>
+                <button id="choose" type="button">Choose</button>
             </div>
 
             <div id="appointment" class="popup" style="display: none;">
@@ -95,8 +96,8 @@
                     <input type="text" id="last_name" name="last_name" required><br><br>
                     <label for="phone">Phone Number:</label>
                     <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
-                    <button id="book">Submit</button>
                 </form>
+                <button type="button" id="book">Book</button>
             </div>
 
             
@@ -117,6 +118,7 @@
                     <label for="expiry-date">Expiry Date:</label>
                     <input type="date" id="expiry-date" name="expiry-date" required><br><br>
                 </form>
+                <button type="button" id="pay">Pay</button>
             </div>
             
         </div>

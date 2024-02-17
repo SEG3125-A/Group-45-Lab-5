@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('book1').addEventListener('click', function() {
         // shows the popup when book button is clicked
         document.getElementById('professional').style.display = 'block';
-        choose("Option A")
+        choose("Mark");
         
     });
     document.getElementById('choose').addEventListener('click', function(){
@@ -16,8 +16,12 @@ document.addEventListener('DOMContentLoaded', function() {
     })
     document.getElementById('book2').addEventListener('click', function() {
         document.getElementById('professional').style.display = 'block';
-        choose("Option A")
+        choose("Mark");
     });
+
+    document.getElementById('pay').addEventListener('click', function(){
+        document.getElementById('payment').style.display='none';  
+    })
     
 });
 
@@ -85,10 +89,19 @@ function validateForm() {
 }
 
 function choose(option){
-    var pic = document.getElementById("proffesion-pic");
+    var pic = document.getElementById("pic");
+    var description = document.getElementById("description");
     switch(option){
-        case "Option A":
+        case "Mark":
             pic.src="pics/professional A.jpg";
+            description.textContent = "He's very handworking and specializes with tire repairs"
+        case "Jones":
+            
+        case "Ben":
+
+        case "Bob":
+
+        case "Joesph":
     }
 
     
