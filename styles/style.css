@@ -32,6 +32,11 @@ html {
     justify-content: center;
 }
 
+.popup img {
+    max-width: 100%;
+    height: auto;
+}
+
 .submitted {
     display: none;
     position: fixed;

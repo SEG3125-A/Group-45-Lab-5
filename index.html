@@ -71,12 +71,12 @@
                 <!-- form content goes here -->
                 <h2>Select a Professional</h2>
                 <form id="appointment-form" action="#" method="post">
-                    <select id="options" name="options">
-                        <option value="option1" onselect="choose('Mark')">Mark</option>
-                        <option value="option2" onselect="choose('Jones')">Jones</option>
-                        <option value="option3" onselect="choose('Ben')">Ben/option>
-                        <option value="option1" onselect="choose('Bob')">Bob</option>
-                        <option value="option2" onselect="choose('Joesph')">Joesph</option>
+                    <select id="options" name="options" onchange="choose(this.value)">
+                        <option value="Mark">Mark</option>
+                        <option value="Jones">Jones</option>
+                        <option value="Ben">Ben</option>
+                        <option value="Bob">Bob</option>
+                        <option value="Joseph">Joseph</option>
                     </select><br><br>
                 </form>
                 <img id="pic" style="align-self: center;"></img><br><br>
